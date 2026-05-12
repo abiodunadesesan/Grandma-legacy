@@ -14,6 +14,7 @@ const source = path.join(root, "src/app/icon.png");
 const iconOut = path.join(root, "src/app/icon.png");
 const appleOut = path.join(root, "src/app/apple-icon.png");
 const icoOut = path.join(root, "src/app/favicon.ico");
+const publicIcoOut = path.join(root, "public/mama-icon.ico");
 
 async function main() {
   if (!fs.existsSync(source)) {
@@ -35,11 +36,20 @@ async function main() {
   try {
     const ico = await pngToIco(tmpSquare);
     fs.writeFileSync(icoOut, ico);
+    fs.mkdirSync(path.join(root, "public"), { recursive: true });
+    // Distinct URL so Safari users stuck on an old cached /favicon.ico get a fresh tab icon.
+    fs.writeFileSync(publicIcoOut, ico);
   } finally {
     fs.unlinkSync(tmpSquare);
   }
 
-  console.log("Wrote:", path.relative(root, iconOut), path.relative(root, appleOut), path.relative(root, icoOut));
+  console.log(
+    "Wrote:",
+    path.relative(root, iconOut),
+    path.relative(root, appleOut),
+    path.relative(root, icoOut),
+    path.relative(root, publicIcoOut)
+  );
 }
 
 main().catch((e) => {

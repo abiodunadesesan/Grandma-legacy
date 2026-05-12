@@ -7,11 +7,13 @@ export const metadata: Metadata = {
   title: siteCopy.metaTitle,
   description: siteCopy.metaDescription,
   icons: {
+    /** Prefer `/mama-icon.ico`: new URL avoids Safari’s long-lived cache on `/favicon.ico`. */
     icon: [
-      { url: "/favicon.ico", sizes: "48x48" },
-      { url: "/icon.png", type: "image/png", sizes: "512x512" }
+      { url: "/mama-icon.ico", sizes: "48x48" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/favicon.ico", sizes: "48x48" }
     ],
-    shortcut: "/favicon.ico",
+    shortcut: "/mama-icon.ico",
     apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "512x512" }]
   }
 };
