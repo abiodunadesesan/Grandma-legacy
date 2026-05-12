@@ -65,7 +65,7 @@ export function CinematicHero({ titleTop, titleMain, subtitle, imageSrc }: Props
       </div>
 
       <div className="relative mx-auto w-full max-w-6xl px-6 pb-16 pt-28">
-        <div className="max-w-2xl rounded-3xl border border-white/12 bg-black/72 p-6 shadow-glow sm:p-7">
+        <div className="max-w-2xl rounded-3xl border-[0.5px] border-white/[0.055] bg-black/72 p-6 shadow-glow sm:p-7">
           <motion.p
             className="text-xs uppercase tracking-cinematic text-gold-200/85"
             initial={{ opacity: 0, y: 12 }}
@@ -123,7 +123,7 @@ export function CinematicHero({ titleTop, titleMain, subtitle, imageSrc }: Props
           </motion.dl>
 
           <motion.div
-            className="mt-10 inline-flex items-center gap-3 rounded-full border border-white/12 bg-black/65 px-4 py-2 text-xs text-pearl/85 shadow-glow"
+            className="mt-10 inline-flex items-center gap-3 rounded-full border-[0.5px] border-white/[0.055] bg-black/65 px-4 py-2 text-xs text-pearl/85 shadow-glow"
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}

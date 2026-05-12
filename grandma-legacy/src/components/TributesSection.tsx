@@ -23,8 +23,8 @@ export function TributesSection() {
               Tributes to Mama
             </h2>
             <p className="mt-5 max-w-2xl text-sm leading-relaxed text-pearl/52 sm:text-base">
-              Words from her grandson, her daughter, and her granddaughter — each written in their own
-              voice.
+              Words from her grandson, her daughter, her granddaughter, and her daughter-in-love —
+              each written in their own voice.
             </p>
           </div>
         </div>

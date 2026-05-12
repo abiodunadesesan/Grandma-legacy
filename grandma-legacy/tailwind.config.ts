@@ -28,7 +28,8 @@ export default {
         cinematic: "0.16em"
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(255, 255, 255, 0.08), 0 30px 90px rgba(0,0,0,0.55)"
+        glow:
+          "0 0 0 0.5px rgba(255, 255, 255, 0.035), 0 30px 90px rgba(0,0,0,0.55)"
       }
     }
   },

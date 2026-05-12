@@ -53,5 +53,15 @@ export const memorialTributes: MemorialTribute[] = [
       "Continue to rest in the bosom of our Lord Jesus Christ, Granny. Till we meet to part no more."
     ],
     signature: "Your granddaughter, Iretioluwa Abiodun"
+  },
+  {
+    id: "patricia-daughter-in-love",
+    heading: "My Tribute to Mom",
+    paragraphs: [
+      "I had heard so much about you from my husband, Mac, and I had always dreamed of meeting you in person. When I met you, there was a language barrier because I spoke in English, and you spoke only Esan. However, your beautiful smile and dimples warmed my heart.",
+      "I found you to be a loving mother and a praying mother. You loved your family with all your heart. I was blessed to have a praying birth mother and a praying mother-in-love. I did not call you my mother-in-law but my mother-in-love.",
+      "Although you are gone from this earth, 2 Corinthians 5:8 says, “We are confident, I say, and willing rather to be absent from the body, and to be present with the Lord?” Therefore, I am confident that you are resting in the presence of the Lord. I will follow your wonderful example, and we shall meet again."
+    ],
+    signature: "With love always. Your daughter, Patricia Ighodalo."
   }
 ];
