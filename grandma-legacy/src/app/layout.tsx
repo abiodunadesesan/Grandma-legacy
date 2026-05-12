@@ -7,9 +7,12 @@ export const metadata: Metadata = {
   title: siteCopy.metaTitle,
   description: siteCopy.metaDescription,
   icons: {
-    icon: [{ url: "/icon.png", type: "image/png" }],
-    shortcut: "/icon.png",
-    apple: [{ url: "/apple-icon.png", type: "image/png" }]
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" }
+    ],
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "512x512" }]
   }
 };
 
