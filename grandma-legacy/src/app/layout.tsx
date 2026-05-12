@@ -5,7 +5,12 @@ import { siteCopy } from "@/lib/siteCopy";
 
 export const metadata: Metadata = {
   title: siteCopy.metaTitle,
-  description: siteCopy.metaDescription
+  description: siteCopy.metaDescription,
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    shortcut: "/icon.png",
+    apple: [{ url: "/apple-icon.png", type: "image/png" }]
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

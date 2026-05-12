@@ -18,6 +18,10 @@ const nextConfig: NextConfig = {
       // Supabase Storage public URLs
       { protocol: "https", hostname: "**.supabase.co" }
     ]
+  },
+  // Browsers request /favicon.ico before parsing HTML; without it some hosts show a generic icon.
+  async rewrites() {
+    return [{ source: "/favicon.ico", destination: "/icon.png" }];
   }
 };
 
